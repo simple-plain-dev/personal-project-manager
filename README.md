@@ -1,4 +1,2 @@
 # personal-project-manager
-Manage your Project &amp; Task using this app
-
-change readme
+Manage your Project & Task using this app
