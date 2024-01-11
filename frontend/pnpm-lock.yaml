@@ -11,6 +11,9 @@ dependencies:
   lucide-svelte:
     specifier: ^0.309.0
     version: 0.309.0(svelte@4.2.8)
+  pocketbase:
+    specifier: ^0.20.2
+    version: 0.20.2
   tailwind-merge:
     specifier: ^2.2.0
     version: 2.2.0
@@ -55,6 +58,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.6.0
     version: 3.6.2(postcss-load-config@5.0.2)(postcss@8.4.33)(svelte@4.2.8)
+  sveltekit-superforms:
+    specifier: ^1.13.2
+    version: 1.13.2(@sveltejs/kit@2.2.1)(svelte@4.2.8)(zod@3.22.4)
   tailwindcss:
     specifier: ^3.3.6
     version: 3.4.1
@@ -67,6 +73,9 @@ devDependencies:
   vite:
     specifier: ^5.0.3
     version: 5.0.11
+  zod:
+    specifier: ^3.22.4
+    version: 3.22.4
 
 packages:
 
@@ -1215,6 +1224,10 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /pocketbase@0.20.2:
+    resolution: {integrity: sha512-gao4DzgQJXhbnWf+iOU/iPjquRqyQeD8l6W8t/foHdiI2rbduYh372IZ7enDbhCtgapSKYpO5TeZFGjwoW6mLA==}
+    dev: false
+
   /postcss-import@15.1.0(postcss@8.4.33):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
     engines: {node: '>=14.0.0'}
@@ -1646,6 +1659,18 @@ packages:
       magic-string: 0.30.5
       periscopic: 3.1.0
 
+  /sveltekit-superforms@1.13.2(@sveltejs/kit@2.2.1)(svelte@4.2.8)(zod@3.22.4):
+    resolution: {integrity: sha512-5PKnL1v+9P3G6HPissMlAyV7bNjvrPAkfkAEgJcrCH5lSkaw23Wf8obUMD4EDwLp3b5d6J7JPQCR6hYUsi2BLg==}
+    peerDependencies:
+      '@sveltejs/kit': 1.x || 2.x
+      svelte: 3.x || 4.x
+      zod: 3.x
+    dependencies:
+      '@sveltejs/kit': 2.2.1(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
+      svelte: 4.2.8
+      zod: 3.22.4
+    dev: true
+
   /tailwind-merge@1.14.0:
     resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
     dev: false
@@ -1828,3 +1853,7 @@ packages:
   /yaml@2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
     engines: {node: '>= 14'}
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+    dev: true
